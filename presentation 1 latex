@@ -1,0 +1,196 @@
+
+\documentclass{beamer}
+
+
+\mode<presentation>
+{
+  \usetheme{Madrid}       % or try default, Darmstadt, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{serif}    % or try default, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{chemfig}
+\usepackage[version=3]{mhchem}
+
+% On Overleaf, these lines give you sharper preview images.
+% You might want to `comment them out before you export, though.
+\usepackage{pgfpages}
+\pgfpagesuselayout{resize to}[%
+  physical paper width=8in, physical paper height=6in]
+
+% Here's where the presentation starts, with the info for the title slide
+\title[CONTROL SYSTEMS{}]{CONTROL SYSTEMS \\* 2018\, Q.29 ( EC SECTION )}
+\author{K SRIKANTH
+\\EE18BTECH11023}
+\institute{}
+\date{February, 2020 }
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\section{QUESTION}
+
+\begin{frame}{QUESTION \;\;2018\, Q.29 ( EC SECTION )}
+
+\begin{itemize}
+  \item The state equation and the output equation of a control system are given below : 
+  
+    \[\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\dot{X} =
+  \left[ {\begin{array}{cc}
+   -4 & -1.5 \\
+   4 & 0 \\
+  \end{array} }\right] X +
+  \left[ {\begin{array}{cc}
+  
+      4   \\
+      0 \\
+  \end{array} }\right] U\]
+  
+    \[Y = 
+ \left[ {\begin{array}{cc}
+   1.5 & 0.625 \\
+  \end{array} }\right] X \]
+   
+Then transfer function representation of the system is 
+\vskip 0.8cm
+\;\;\;\;(A) $\frac{(3s + 5)}{(s^2 + 4s + 6)}$ \; \;\; \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;    (B) $\frac{(3s -1.875)}{(s^2 + 4s + 6)}$
+\vskip 0.5cm
+\;\;\;\;(C) $\frac{(4s + 1.5)}{(s^2 + 4s + 6)}$ \; \;\; \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; (D) $\frac{(6s + 5)}{(s^2 + 4s + 6)}$
+\vskip 0.4cm
+
+\end{itemize}
+
+\vskip 1cm
+
+\end{frame}
+
+
+\subsection{SOLUTION}
+
+\begin{frame}{SOLUTION}
+
+\begin{itemize}
+\item From the given state space representation of the system, we can find matrices as
+ \[
+   A=
+  \left[ {\begin{array}{cc}
+   -4 & -1.5 \\
+   4 & 0 \\
+  \end{array} } \right] ,  
+  B = \left[ {\begin{array}{cc}
+  
+      4   \\
+      0 \\
+  \end{array} }\right],                     C = \left[ {\begin{array}{cc}
+   1.5 & 0.625 \\
+  \end{array} }\right]\]
+  when\[\;\dot{X} = AX + BU\]
+  \[Y = CX + DU\]
+  \\* where \; A,\,B,\,C,\,D \; are matrices 
+  \\* Then\,the\, transfer\, function\, can\, be\, find\, using
+  \[T(s) = C[(sI-A)^{-1}].B \,+ D\]
+  \end{itemize}
+\end{frame}
+
+\subsection{SOLUTION}
+\begin{frame}{SOLUTION}
+\\*We can find the transfer function using
+
+\[ T(s) = C[(sI - A)^{-1}].B \tag{$1$}\]
+
+\[ \;\;\;\;\;\;\;\;\;\;\;(sI - A) = \left[ {\begin{array}{cc}
+   s & 0 \\
+   0 & s \\
+  \end{array} } \right] - \left[ {\begin{array}{cc}
+   -4 & -1.5 \\
+   4 & 0 \\
+  \end{array} } \right]\]
+\[(sI - A) = \left[ {\begin{array}{cc}
+   s + 4 & -1.5 \\
+   -4 & s  \\
+  \end{array} } \right] \tag{$2$}\]
+   \vskip 0.01cm
+\[ 
+ \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;|sI - A| \;\;\;= s(s+4) - (-4)\times (-1.5) \]
+ \vskip 0.01cm
+ 
+ \[\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;= s^2 + 4s+ 6 \tag{$3$}\]
+  \vskip 0.00001cm
+ 
+ 
+  
+\end{frame}
+\begin{frame}{SOLUTION}
+\[Adj[sI - A] = \left[ {\begin{array}{cc}
+   s & -1.5 \\
+   4 & s+4 \\
+  \end{array} } \right]\]
+  
+  \vskip 0.1cm
+\\*Hence
+ \[[sI - A]^{-1} = \frac{Adj[sI - A]}{|sI - A|} = \left[ {\begin{array}{cc}
+   \frac{s}{(s^2 + 4s + 6)} & \frac{-1.5}{(s^2 + 4s + 6)} \\
+   \frac{4}{(s^2 + 4s + 6)} & \frac{(s + 4)}{(s^2 + 4s + 6)} \\
+  \end{array} } \right] \tag{$4$}\]
+  \vskip 0.1cm
+\[
+  [sI - A]^{-1}.B = \left[ {\begin{array}{cc}
+   \frac{s}{(s^2 + 4s + 6)} & \frac{-1.5}{(s^2 + 4s + 6)} \\
+   \frac{4}{(s^2 + 4s + 6)} & \frac{(s + 4)}{(s^2 + 4s + 6)} \\
+  \end{array} } \right]\left[ {\begin{array}{cc}
+  
+      4   \\
+      0 \\
+  \end{array} }\right] \tag{$5$}
+  \]
+  \vskip 0.1cm
+\dot{.\hspace{.095in}.}\hspace{.5in}
+\vskip 0.1cm
+
+\end{frame}
+\begin{frame}{SOLUTION}
+\[
+\dot{.\hspace{.095in}.}\hspace{.5in} [sI - A]^{-1}.B =  \left[ {\begin{array}{cc}
+   \frac{2s}{(s^2 + 4s + 6)} \\
+   \frac{8}{(s^2 + 4s + 6)} \\
+  \end{array} } \right] \tag{$6$}\]
+ \vskip 0.1cm 
+\[ Substituting\, values\, of\, [sI - A]^{-1}.B\, and\, C\, in\, equation\, (1)\]
+\vskip 0.1cm
+\[ T(s) = \left[ {\begin{array}{cc}
+   1.5 & 0.625 \\
+  \end{array} }\right]\left[ {\begin{array}{cc}
+   \frac{2s}{(s^2 + 4s + 6)} \\
+   \frac{8}{(s^2 + 4s + 6)} \\
+  \end{array} } \right] \tag{$7$}
+\]
+
+\end{frame}
+\begin{frame}{SOLUTION}
+\[
+ T(s) = \left[ {\begin{array}{cc}
+   \frac{3s}{(s^2 + 4s + 6)} + \frac{5}{(s^2 + 4s + 6)} \\
+
+  \end{array} } \right]
+\]
+\vskip 0.1cm
+\[
+ the\,transfer\, function\, representation\, of\, the\, system\, is \]
+\vskip 0.5cm
+\[
+\dot{.\hspace{.095in}.}\hspace{.5in}
+\textsc{\bf  T(s) = \left[ {\begin{array}{cc}
+   \frac{3s + 5}{(s^2 + 4s + 6)} 
+  \end{array} } \right] \tag{$8$}\\ }
+\]
+
+
+\end{frame}
+\end{document}
