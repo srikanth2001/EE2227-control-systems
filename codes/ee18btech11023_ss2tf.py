@@ -1,3 +1,7 @@
+#Coded by SRIKANTH
+#15th April, 2020
+#Released under GNU GPL
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import ss2tf
