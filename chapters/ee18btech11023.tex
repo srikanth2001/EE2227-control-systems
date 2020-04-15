@@ -23,11 +23,11 @@ when
     \vec{Y} = \vec{C}\vec{X} + \vec{D}\vec{U}
 \end{align}
 \vskip 0.1cm
-where \vec{A},\,\vec{B},\,\vec{C},\,\vec{D}  are matrices.
-  Then\,the\, transfer\, function\, can\, be\, find\, using
+where \vec{A},\vec{B},\vec{C},\vec{D}  are matrices.
+  Then the  transfer  function can be find using
 \vskip 0.1cm
 \begin{align}
-    T(s) = \vec{C}\sbrak{(sI-\vec{A})^{-1}}.\vec{B} \,+ \vec{D}\
+    T(s) = \vec{C}\sbrak{(sI-\vec{A})^{-1}}.\vec{B} + \vec{D}
 \end{align}
 \vskip 0.1cm
 From the given state space representation of the system, we can find matrices as
@@ -42,7 +42,7 @@ From the given state space representation of the system, we can find matrices as
 \end{align}
 We can find the transfer function using
 \begin{align}
-    T(s) = \vec{C}\sbrak{(sI-\vec{A})^{-1}}.\vec{B} \,+ \vec{D}\
+    T(s) = \vec{C}\sbrak{(sI-\vec{A})^{-1}}.\vec{B} + \vec{D}
 \end{align}
 \begin{align}
     (sI - \vec{A}) =  \myvec{s&0\\0&s} -  \myvec{-4&-1.5\\4&0}
@@ -51,7 +51,7 @@ We can find the transfer function using
     (sI - \vec{A}) =  \myvec{s-4&-1.5\\4&s}
 \end{align}
 \begin{align}
-    |sI - \vec{A}| \; = s(s+4) - (-4)\times (-1.5)
+    |sI - \vec{A}| = s(s+4) - (-4)\times (-1.5)
 \end{align}
 \vskip 0.1cm
 \begin{align}
@@ -81,8 +81,7 @@ and from (1.2.9)
 \end{align}
 \vskip 0.1cm
 \begin{align*}
-    Substituting\,the\,  values\, of\, \sbrak{sI - \vec{A}}^{-1}.\vec{B}\,
-     and\, \vec{C}\, in\, equation\, (1.2.7)
+Substituting\,the\,values\,of\,\sbrak{sI - \vec{A}}^{-1}.\vec{B}\,and\,\vec{C}\,in\,equation (1.2.7)   
 \end{align*}
 \vskip 0.1cm
 \begin{align}
@@ -94,7 +93,7 @@ and from (1.2.9)
 \end{align}
 
 
-the\,transfer\, function\, representation\, of\, the\, system\, is
+the transfer function representation of the system is
 \vskip 0.1cm
 \begin{align}
     \dot{.\hspace{.095in}.}\hspace{.5in}
