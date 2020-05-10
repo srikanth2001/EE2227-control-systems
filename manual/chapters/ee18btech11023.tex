@@ -1,0 +1,108 @@
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item
+The state equation and the output equation of a control system are given below : 
+\begin{align}
+    \vec{\dot X}=\myvec{-4&-1.5\\4&0}\vec{X} + \myvec{4\\0}\vec{U}   
+\end{align}
+\begin{align}
+    \vec{Y} = \myvec{1.5&0.625}\vec{X}
+\end{align}
+  
+Then transfer function representation of the system is 
+
+
+\item 
+\solution
+when
+\begin{align}
+    \vec{\dot{X}} = \vec{A}\vec{X} + \vec{B}\vec{U}
+\end{align}
+\begin{align}
+    \vec{Y} = \vec{C}\vec{X} + \vec{D}\vec{U}
+\end{align}
+\vskip 0.1cm
+where $\vec{A},\vec{B},\vec{C},\vec{D}$ are matrices.
+  Then the  transfer  function can be find using
+\vskip 0.1cm
+\begin{align}
+    T(s) = \vec{C}\sbrak{(sI-\vec{A})^{-1}}.\vec{B} + \vec{D}
+\end{align}
+\vskip 0.1cm
+From the given state space representation of the system, we can find matrices as
+\begin{align}
+    \vec{A}= \myvec{-4&-1.5\\4&0}
+\end{align}
+\begin{align}
+    \vec{B} = \myvec{4\\0}
+\end{align}
+\begin{align}
+     \vec{C} = \myvec{1.5&0.625}
+\end{align}
+We can find the transfer function using
+\begin{align}
+    T(s) = \vec{C}\sbrak{(sI-\vec{A})^{-1}}.\vec{B} + \vec{D}
+\end{align}
+\begin{align}
+    (sI - \vec{A}) =  \myvec{s&0\\0&s} -  \myvec{-4&-1.5\\4&0}
+\end{align}
+\begin{align}
+    (sI - \vec{A}) =  \myvec{s-4&-1.5\\4&s}
+\end{align}
+\begin{align}
+    |sI - \vec{A}| = s(s+4) - (-4)\times (-1.5)
+\end{align}
+\vskip 0.1cm
+\begin{align}
+    |sI - \vec{A}| = s^2 + 4s+ 6
+\end{align}
+\vskip 0.1cm
+and from (1.2.9)
+\begin{align}
+    Adj\sbrak{sI - \vec{A}} =  \myvec{s&-1.5\\4&s+4}
+\end{align}
+
+\begin{align}
+    \sbrak{sI - \vec{A}}^{-1} = \frac{Adj[sI - \vec{A}]}{|sI - \vec{A}|} 
+\end{align}
+\vskip 0.1cm
+
+  \[ =  \myvec{\frac{s}{(s^2 + 4s + 6)}&\frac{-1.5}{(s^2 + 4s + 6)}\\\frac{4}{(s^2 + 4s + 6)}&\frac{s + 4}{(s^2 + 4s + 6)}}\]
+    
+
+\vskip 0.1cm
+\begin{align}
+    \sbrak{sI - \vec{A}}^{-1}.\vec{B} = \myvec{\frac{s}{(s^2 + 4s + 6)}&\frac{-1.5}{(s^2 + 4s + 6)}\\\frac{4}{(s^2 + 4s + 6)}&\frac{s + 4}{(s^2 + 4s + 6)}}\myvec{4\\0}
+\end{align}
+\vskip 0.1cm
+\begin{align}
+    \dot{.\hspace{.095in}.}\hspace{.5in}  \sbrak{sI - \vec{A}}^{-1}.\vec{B} = \myvec{\frac{4s}{(s^2 + 4s + 6)}\\\frac{16}{(s^2 + 4s + 6)}}
+\end{align}
+\vskip 0.1cm
+\begin{align*}
+Substituting\,the\,values\,of\,\sbrak{sI - \vec{A}}^{-1}.\vec{B}\,and\,\vec{C}\,in\,equation (1.2.7)   
+\end{align*}
+\vskip 0.1cm
+\begin{align}
+     T(s) = \myvec{1.5&0.625}\myvec{\frac{4s}{(s^2 + 4s + 6)}\\\frac{16}{(s^2 + 4s + 6)}}
+\end{align}
+\vskip 0.1cm
+\begin{align}
+    T(s) = \myvec{\frac{6s}{(s^2 + 4s + 6)}+\frac{10}{(s^2 + 4s + 6)}}
+\end{align}
+
+
+the transfer function representation of the system is
+\vskip 0.1cm
+\begin{align}
+    \dot{.\hspace{.095in}.}\hspace{.5in}
+\bf  T(s) = \myvec{\frac{6s+10}{(s^2 + 4s + 6)}} 
+\end{align}
+\item
+
+\item 
+verify the answer with python code
+https://github.com/srikanth2001/EE2227-control-systems/tree/master/codes
+
+\end{enumerate}
