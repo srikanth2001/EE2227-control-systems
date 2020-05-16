@@ -12,7 +12,7 @@ plt.plot(data[:,0],data[:,1])
 plt.grid()
 plt.xlabel("time")
 plt.ylabel("Step response")
-plt.title('Spice simulation for uncompensated system')
+plt.title('Spice simulation for feedback amplifier')
 #plt.show()
 #if using termux
 
