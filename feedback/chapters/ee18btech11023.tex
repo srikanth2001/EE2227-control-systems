@@ -9,7 +9,7 @@ connecting the gate of $Q_2$ to signal ground, an amplifier is
 placed between source and gate.
 \begin{figure}[!ht]
 	\begin{center}
-			\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11023_ckt1}}
+			\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11023/ee18btech11023_ckt1}}
 	\end{center}
 \caption{}
 \label{fig:Original ckt1}
@@ -17,7 +17,7 @@ placed between source and gate.
 \\for the fig.\ref{fig:Original ckt1} , the parameter's  table is\;\;\;\;\; TABLE.\ref{table:ee18btech11023_1}
 \begin{table}[]
     \centering
-  	\resizebox{\columnwidth}{!}{\input{./tables/ee18btech11023_table1}}
+  	\resizebox{\columnwidth}{!}{\input{./tables/EE18BTECH11023/ee18btech11023_table1}}
     \caption{}
     \label{table:ee18btech11023_1}
 \end{table}
@@ -77,11 +77,11 @@ For the finite value of $\mu$ and the input resistance of a ideal op-amp is very
 the open loop amplifier circuit ('G' circuit ) fig.\ref{fig:small ckt}
 \begin{figure}[!ht]
 	\begin{center}
-			\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11023_ckt3}}
+			\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11023/ee18btech11023_ckt3}}
 	\end{center}
 \caption{}
-\label{fig:small ckt}
-\end{figure}\\
+\label{fig:Original ckt1}
+\end{figure}
 
 For a ideal op-amp the output Resistance is very small, so we can neglect the resistance $r_o$.  from fig\ref{fig:small ckt}
 \begin{align}
@@ -264,7 +264,7 @@ to find Io and Rout.
 
 \textbf{\begin{figure}[!ht]
 	\begin{center}
-			\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11023_ckt2}}
+			\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11023/ee18btech11023_ckt2}}
 	\end{center}
 \caption{}
 \label{fig:Original ckt2}
@@ -273,7 +273,7 @@ to find Io and Rout.
 TABLE.\ref{table:ee18btech11023_2}
 \begin{table}[]
     \centering
-  	\resizebox{\columnwidth}{!}{\input{./tables/ee18btech11023_table2}}
+  	\resizebox{\columnwidth}{!}{\input{./tables/EE18BTECH11023/ee18btech11023_table2}}
     \caption{}
     \label{table:ee18btech11023_2}
 \end{table}
@@ -284,7 +284,7 @@ fig.\ref{fig:small ckt2},
 
 \begin{figure}[!ht]
 	\begin{center}
-			\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11023_ckt4}}
+			\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11023/ee18btech11023_ckt4}}
 	\end{center}
 \caption{}
 \label{fig:small ckt2}
@@ -411,7 +411,7 @@ since the value of resistance R is 1ohm
 \end{align}
 \begin{table}[]
     \centering
-  	\resizebox{\columnwidth}{!}{\input{./tables/ee18btech11023_table3}}
+  	\resizebox{\columnwidth}{!}{\input{./tables/EE18BTECH11023/ee18btech11023_table3}}
     \caption{}
     \label{table:ee18btech11023_2}
 \end{table}
@@ -422,7 +422,7 @@ spice/EE18BTECH11023/README
 fig.\ref{fig:spice fig} shows the circuit implemented in spice using parameter table
 \begin{figure}[!ht]
 	\begin{center}
-			\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11023_ckt5}}
+			\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11023/ee18btech11023_ckt5}}
 	\end{center}
 \caption{}
 \label{fig:spice fig}
@@ -438,9 +438,12 @@ fig.
 spice/EE18BTECH11023/ee18btech11023.py
 \end{lstlisting}
 final output plot is below.
- \begin{lstlisting}
-output figure
-\end{lstlisting}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\columnwidth]{figs/EE18BTECH11023/ee18btech11023_output.eps}
+    \caption{output from feedback Amplifier}
+    \label{fig:output}
+\end{figure}
 here we are using amplitude 1 for input signal. \\
 then the output voltage will negative of the input signal. there will be no change in amplitude in output signal.\\
 
