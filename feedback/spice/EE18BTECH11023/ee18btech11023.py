@@ -1,3 +1,5 @@
+#by K Srikanth
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -22,4 +24,4 @@ plt.savefig('./figs/ee18btech11023/ee18btech11023_output.pdf')
 plt.savefig('./figs/ee18btech11023/ee18btech11023_output.eps')
 subprocess.run(shlex.split("termux-open ./figs/ee18btech11023/ee18btech11023_output.pdf"))
 #else
-#plt.sho
+#plt.show()
