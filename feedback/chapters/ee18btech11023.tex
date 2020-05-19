@@ -398,7 +398,7 @@ then
     I_s \equiv I_o
 \end{align}
 to simulate the circuit we are giving some values to $I_s$ and $R_s$
-and to find $I_O$ we are introducing a  1ohm resistance at drain of nmos
+and to find $I_o$ we are introducing a  1ohm resistance at drain of nmos.
 then , 
 \begin{align}
     V_o = -RI_o
@@ -413,13 +413,13 @@ since the value of resistance R is 1ohm
     \centering
   	\resizebox{\columnwidth}{!}{\input{./tables/EE18BTECH11023/ee18btech11023_table3}}
     \caption{}
-    \label{table:ee18btech11023_2}
+    \label{table:ee18btech11023_3}
 \end{table}
 following link provides instructions for simulation
  \begin{lstlisting}
 spice/EE18BTECH11023/README
 \end{lstlisting}
-fig.\ref{fig:spice fig} shows the circuit implemented in spice using parameter table
+fig.\ref{fig:spice fig} shows the circuit implemented in spice using parameter table\ref{table:ee18btech11023_3}
 \begin{figure}[!ht]
 	\begin{center}
 			\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11023/ee18btech11023_ckt5}}
@@ -427,7 +427,10 @@ fig.\ref{fig:spice fig} shows the circuit implemented in spice using parameter t
 \caption{}
 \label{fig:spice fig}
 \end{figure}
- the following netlits code simulates the feedback current amplifier and generates sinusoidal output 
+
+
+
+the following netlits code simulates the feedback current amplifier and generates sinusoidal output 
  \begin{lstlisting}
 spice/EE18BTECH11023/ee18btech11023.net
 \end{lstlisting}
