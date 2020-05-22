@@ -9,7 +9,7 @@ import subprocess
 import shlex
 #end if
 
-data=np.loadtxt('./spice/ee18btech11023/ee18btech11023.dat')
+data=np.loadtxt('./spice/ee18btech11023.dat')
 plt.plot(data[:,0],data[:,1])
 plt.grid()
 plt.xlabel("time")
@@ -20,9 +20,9 @@ plt.title('Spice simulation for feedback amplifier')
 
 
 
-plt.savefig('./figs/ee18btech11023/ee18btech11023_output.png')
-plt.savefig('./figs/ee18btech11023/ee18btech11023_output.eps')
-subprocess.run(shlex.split("termux-open ./figs/ee18btech11023/ee18btech11023_output.pdf"))
+plt.savefig('./figs/EE18BTECH11023/ee18btech11023_output.pdf')
+plt.savefig('./figs/EE18BTECH11023/ee18btech11023_output.eps')
+subprocess.run(shlex.split("termux-open ./figs/EE18BTECH11023/ee18btech11023_output.pdf"))
 #else
 #plt.show()
 
