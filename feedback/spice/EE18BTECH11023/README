@@ -4,5 +4,5 @@ instructions for simulation:
 above command genarates ee18btech11023.dat file in that same folder.
 3:Enter the following command to exit from the interactive console.
   Enter the command : exit
-4.Make sure that ee18btech11023.dat , ee18btech11023.py are in the same folder.
+4.Make sure that ee18btech11023.dat is in folder ./spice/EE17BTECH11023.
 5.Run the ee18btech11023.py file which gives a python plot of time vs Vout.
