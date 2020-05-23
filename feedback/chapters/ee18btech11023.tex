@@ -24,9 +24,10 @@ placed between source and gate.
 
 \item 
 \label{Question_1a_ee18btech11023}
+\textbf{
 (a) If $\mu$ is very large, what is the signal voltage at the input
 terminal?What is the input resistance?What is the current
-gain Io/Is ?\\
+gain Io/Is ?}\\
 \\
 \solution \\
 Refer to the fig. \ref{fig:Original ckt1} for the feedback current amplifier circuit, in this super common gate transistor is connected between the gate and source terminals of the MOSFET.\\
@@ -68,9 +69,10 @@ and from fig.\ref{fig:small ckt1} the input Resistance is equal to $R_{id}$
 
 \item
 \label{Question_1b_ee18btech11023}
+\textbf{
 (b) For finite $\mu$ but assuming that the input resistance of the
 amplifier g is very large, find the 'G' circuit and derive
-expressions for G, $Ri$, and $R_o$.?
+expressions for G, $Ri$, and $R_o$.?}
 \\
 \solution\\
 For the finite value of $\mu$ and the input resistance of a ideal op-amp is very high(infinite).
@@ -126,7 +128,8 @@ the output Resistance:
 
 \item
 \label{Question_1c_ee18btech11023}
-(c) What is the value of H?
+\textbf{
+(c) What is the value of H?}
 \\
 \solution\\
 closed loop gain of the op-amp is:
@@ -154,7 +157,8 @@ the value of 'H' will be:
 \end{align}
 \item
 \label{Question_1d_ee18btech11023}
-(d) Find GH and T . If $\mu$ is large, what is the value of T ?\\
+\textbf{
+(d) Find GH and T . If $\mu$ is large, what is the value of T ?}\\
 \solution\\
 from eq.\ref{eq_ee18btech11023_10} and from eq.\ref{eq_ee18btech11023_16}
 \begin{align*}
@@ -183,7 +187,8 @@ for the larger valve of $\mu$
 
 \item
 \label{Question_1e_ee18btech11023}
-(e) Find $R_{in}$ and $R_{out}$ assuming the loop gain is large\\
+\textbf{
+(e) Find $R_{in}$ and $R_{out}$ assuming the loop gain is large}\\
 \solution\\
 \textbf{for a Feedback Amplifier }
 \begin{align}
@@ -211,7 +216,7 @@ the eq.\ref{eq_ee18btech11023_23} can also written like
     R_{if} = R_s \parallel R_{in}
     \label{eq_ee18btech11023_25}
 \end{align}
- from the equations \ref{eq_ee18btech11023_24} and \ref{eq_ee18btech11023_25} $R_{in}$ ca be written as:
+ from the equations \ref{eq_ee18btech11023_24} and \ref{eq_ee18btech11023_25} $R_{in}$ can be written as:
 
 \begin{align}
     R_{in} = \frac{1}{\mu g_m}
@@ -226,6 +231,7 @@ then $R_{in}$ becomes:
     R_{in} = 0
     \label{eq_ee18btech11023_27}
 \end{align}
+\\
 \textbf{for a Feedback Amplifier output Resistance is: }
 \begin{align}
     R_{out} = (1 + GH)R_o
@@ -256,12 +262,12 @@ By observing the eq.\ref{eq_ee18btech11023_31} , for the lager value for $\mu$ w
 \end{align}
 \item
 \label{Question_2f_ee18btech11023}
+\textbf{
 (f) The “super” CG transistor can be utilized in the cascode
 configuration shown in Fig.\ref{fig:Original ckt2}, where $V_G$ is a dc
 bias voltage. Replacing Q1 by its small-signal model, use
 the analogy of the resulting circuit to that in Fig.\ref{fig:Original ckt1}
-to find Io and Rout.
-
+to find Io and Rout.}
 \textbf{\begin{figure}[!ht]
 	\begin{center}
 			\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11023/ee18btech11023_ckt2}}
@@ -276,8 +282,7 @@ TABLE.\ref{table:ee18btech11023_2}
   	\resizebox{\columnwidth}{!}{\input{./tables/EE18BTECH11023/ee18btech11023_table2}}
     \caption{}
     \label{table:ee18btech11023_2}
-\end{table}
-\item
+\end{table}\\
 \solution\\
 Refer to the fig.\ref{fig:Original ckt2} for the cascode configuration in which the super CG transistor is used.  the small signal equivalent circuit is shown in 
 fig.\ref{fig:small ckt2},
@@ -294,7 +299,7 @@ from the fig.\ref{fig:small ckt2} clearly observed that the current $I_s$
 \begin{align}
     I_s = g_{m1} V_{gs}
     \label{eq_ee18btech11023_33}
-\end{align}
+\end{align}\\
 the voltage $V_i$ is applied at the gate terminal of the transistor $Q_1$ ,
 therefore the gate source voltage becomes $V_i$\;:
 \begin{align}
@@ -387,7 +392,8 @@ therefore the expression for output resistance is :
      \label{eq_ee18btech11023_50}
 \end{align}
 \item
-verify circuit by ngspice simulation.\\
+\textbf{
+verify circuit by ngspice simulation.}\\
 for the circuit we found that 
 \begin{align}
     \frac{I_o}{I_s} \equiv 1 
