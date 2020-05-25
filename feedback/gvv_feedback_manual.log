@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2020.3.3)  25 MAY 2020 10:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2020.3.3)  25 MAY 2020 10:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1278,10 +1278,6 @@ LaTeX Info: Redefining \nameref on input line 88.
 \@outlinefile=\write4
 \openout4 = `gvv_feedback_manual.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 \c@lstlisting=\count199
 \c@theorem=\count266
 \c@problem=\count267
@@ -1291,6 +1287,7 @@ Package hyperref Warning: Rerun to get /PageLabels entry.
 \c@rem=\count271
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 224.
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 224.
+
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
@@ -1319,25 +1316,13 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 224.
 File: utxsyc.fd 2000/12/15 v3.1
 )
 (./chapters/ee18btech11023.tex
-
-LaTeX Warning: Reference `fig:Original ckt1' on page 1 undefined on input line 
-6.
-
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ú in font txr!
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ù in font txr!
-(./figs/EE18BTECH11023/ee18btech11023_ckt1.tex)
-
-LaTeX Warning: Reference `fig:Original ckt1' on page 1 undefined on input line 
-17.
-
-
-LaTeX Warning: Reference `table:ee18btech11023_1' on page 1 undefined on input 
-line 17.
-
+ (./figs/EE18BTECH11023/ee18btech11023_ckt1.tex)
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 18.
@@ -1349,22 +1334,13 @@ LaTeX Warning: No positions in optional float specifier.
 \gnumericColA=\skip82
 \gnumericColB=\skip83
 )
-
-LaTeX Warning: Reference `fig:Original ckt1' on page 1 undefined on input line 
-33.
-
-
-LaTeX Warning: Reference `fig:small ckt1' on page 1 undefined on input line 35.
-
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 30--36
 
  []
 
 
-Underfull \hbox (badness 6016) in paragraph at lines 30--36
-\OT1/txr/m/n/12 with ref-er-ence to the fig,[]. For ideal
+Underfull \hbox (badness 4832) in paragraph at lines 30--36
+\OT1/txr/m/n/12 with ref-er-ence to the fig,[][]2.3[][][]. For ideal
  []
 
 
@@ -1378,82 +1354,20 @@ Underfull \hbox (badness 1383) in paragraph at lines 30--36
 \OT1/txr/m/n/12 high (in-fi-nite) . And the drain cur-rent is
  []
 
-
-LaTeX Warning: Reference `fig:small ckt1' on page 1 undefined on input line 46.
-
-
 [1
 
 
-]
-
-LaTeX Warning: Reference `fig:small ckt1' on page 2 undefined on input line 64.
-
-
-
-LaTeX Warning: Reference `fig:small ckt1' on page 2 undefined on input line 79.
-
-
-(./figs/EE18BTECH11023/ee18btech11023_ckt3.tex)
-
-LaTeX Warning: Reference `fig:small ckt1' on page 2 undefined on input line 88.
-
-
-
-LaTeX Warning: Reference `fig:small ckt1' on page 2 undefined on input line 114
-.
-
-
-LaTeX Warning: Reference `eq_ee18btech11023_10' on page 2 undefined on input li
-ne 163.
-
-
-LaTeX Warning: Reference `eq_ee18btech11023_16' on page 2 undefined on input li
-ne 163.
-
-
-LaTeX Warning: Reference `eq_ee18btech11023_18' on page 2 undefined on input li
-ne 177.
-
-
+] (./figs/EE18BTECH11023/ee18btech11023_ckt3.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-
-LaTeX Warning: Reference `eq_ee18btech11023_21' on page 3 undefined on input li
-ne 200.
-
-
-LaTeX Warning: Reference `eq_ee18btech11023_22' on page 3 undefined on input li
-ne 205.
-
-
-LaTeX Warning: Reference `eq_ee18btech11023_23' on page 3 undefined on input li
-ne 210.
-
-
-LaTeX Warning: Reference `eq_ee18btech11023_24' on page 3 undefined on input li
-ne 219.
-
-
-LaTeX Warning: Reference `eq_ee18btech11023_25' on page 3 undefined on input li
-ne 219.
-
-
-LaTeX Warning: Reference `fig:small ckt1' on page 3 undefined on input line 240
-.
-
-
-LaTeX Warning: Reference `eq_ee18btech11023_28' on page 3 undefined on input li
-ne 245.
+Underfull \hbox (badness 1881) in paragraph at lines 197--201
+\OT1/txr/m/n/12 substituting the val-ues of GH and $\OML/txmi/m/it/12 R[]$ \OT1
+/txr/m/n/12 in
+ []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-LaTeX Warning: Reference `eq_ee18btech11023_31' on page 3 undefined on input li
-ne 255.
 
 Missing character: There is no ‚ in font txb!
 Missing character: There is no Ä in font txb!
@@ -1462,75 +1376,14 @@ Missing character: There is no ‚ in font txb!
 Missing character: There is no Ä in font txb!
 Missing character: There is no ù in font txb!
 
-LaTeX Warning: Reference `fig:Original ckt2' on page 3 undefined on input line 
-270.
-
-
-LaTeX Warning: Reference `fig:Original ckt1' on page 3 undefined on input line 
-270.
-
 (./figs/EE18BTECH11023/ee18btech11023_ckt2.tex)
-
-LaTeX Warning: Reference `fig:Original ckt2' on page 3 undefined on input line 
-278.
-
-
-LaTeX Warning: Reference `table:ee18btech11023_2' on page 3 undefined on input 
-line 279.
-
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 280.
 
-(./tables/EE18BTECH11023/ee18btech11023_table2.tex)
-
-LaTeX Warning: Reference `fig:Original ckt2' on page 3 undefined on input line 
-287.
-
-
-LaTeX Warning: Reference `fig:small ckt2' on page 3 undefined on input line 288
-.
-
-[3] (./figs/EE18BTECH11023/ee18btech11023_ckt4.tex)
-
-LaTeX Warning: Reference `fig:small ckt2' on page 4 undefined on input line 298
-.
-
-
-LaTeX Warning: Reference `eq_ee18btech11023_34' on page 4 undefined on input li
-ne 310.
-
-
-LaTeX Warning: Reference `eq_ee18btech11023_33' on page 4 undefined on input li
-ne 310.
-
-
-LaTeX Warning: Reference `Question_1b_ee18btech11023' on page 4 undefined on in
-put line 320.
-
-
-LaTeX Warning: Reference `Question_1c_ee18btech11023' on page 4 undefined on in
-put line 320.
-
-
-LaTeX Warning: Reference `eq_ee18btech11023_36' on page 4 undefined on input li
-ne 330.
-
-
+(./tables/EE18BTECH11023/ee18btech11023_table2.tex) [3]
+(./figs/EE18BTECH11023/ee18btech11023_ckt4.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-LaTeX Warning: Reference `eq_ee18btech11023_35' on page 4 undefined on input li
-ne 347.
-
-
-LaTeX Warning: Reference `eq_ee18btech11023_41' on page 4 undefined on input li
-ne 347.
-
-
-LaTeX Warning: Reference `Question_1d_ee18btech11023' on page 4 undefined on in
-put line 375.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1541,14 +1394,6 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 418.
 
 (./tables/EE18BTECH11023/ee18btech11023_table3.tex)
-
-LaTeX Warning: Reference `fig:spice fig' on page 5 undefined on input line 428.
-
-
-
-LaTeX Warning: Reference `table:ee18btech11023_3' on page 5 undefined on input 
-line 428.
-
 (./figs/EE18BTECH11023/ee18btech11023_ckt5.tex)
 File: figs/EE18BTECH11023/ee18btech11023_output.eps Graphic file (type eps)
 
@@ -1571,30 +1416,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 271.
  (./gvv_feedback_manual.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 271.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 271.
-
-
-Package rerunfilecheck Warning: File `gvv_feedback_manual.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `gvv_feedback_manual.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  0CA316A16B2B9024EAD9F543B11E2310;272.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
+(rerunfilecheck)             Checksum: 0CA316A16B2B9024EAD9F543B11E2310;272.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 271.
  ) 
 Here is how much of TeX's memory you used:
- 33233 strings out of 492983
- 713184 string characters out of 6134923
- 944889 words of memory out of 5000000
- 36170 multiletter control sequences out of 15000+600000
+ 33256 strings out of 492983
+ 713684 string characters out of 6134923
+ 950843 words of memory out of 5000000
+ 36193 multiletter control sequences out of 15000+600000
  75595 words of font info for 190 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,15n,67p,511b,1140s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,15n,67p,511b,1114s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_feedback_manual.dvi (5 pages, 148732 bytes).
+Output written on gvv_feedback_manual.dvi (5 pages, 157272 bytes).
