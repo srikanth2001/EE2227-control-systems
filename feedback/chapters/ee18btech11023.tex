@@ -3,25 +3,62 @@
 
 \item
 \label{Question_1_ee18btech11023}
-The feedback current amplifier in fig.\ref{fig:Original ckt1} can
+The feedback current amplifier in fig.\ref{fig:Original ckt1}a can
 be thought of as a “super” CG transistor. Note that rather than
 connecting the gate of $Q_2$ to signal ground, an amplifier is
-placed between source and gate.
-\begin{figure}[!ht]
+placed between source and gate.\\
+
+
+(a) If $\mu$ is very large, what is the signal voltage at the input
+terminal?What is the input resistance?What is the current
+gain Io/Is ?\\
+
+
+(b) For finite $\mu$ but assuming that the input resistance of the
+amplifier g is very large, find the 'G' circuit and derive
+expressions for G, $R_i$, and $R_o$.?\\
+
+
+(c) What is the value of H?\\
+
+
+(d) Find GH and T . If $\mu$ is large, what is the value of T ?\\
+
+
+(e) Find $R_{in}$ and $R_{out}$ assuming the loop gain is large?\\
+
+
+(f) The “super” CG transistor can be utilized in the cascode
+configuration shown in Fig.\ref{fig:Original ckt2}b, where $V_G$ is a dc
+bias voltage. Replacing Q1 by its small-signal model, use
+the analogy of the resulting circuit to that in Fig.\ref{fig:Original ckt1}a to find $I_o$ and $R_{out}$.?
+\begin{figure}[!h]
 	\begin{center}
-			\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11023/ee18btech11023_ckt1}}
+			\resizebox{\columnwidth}{!}{\input{figs/EE18BTECH11023/ee18btech11023_ckt1}}
 	\end{center}
-\caption{}
+\caption{a}
 \label{fig:Original ckt1}
 \end{figure}
-\\for the fig.\ref{fig:Original ckt1} , the parameter's  table is\;\;\;\;\; TABLE.\ref{table:ee18btech11023_1}
+\begin{figure}[!h]
+	\begin{center}
+			\resizebox{\columnwidth}{!}{\input{figs/EE18BTECH11023/ee18btech11023_ckt2}}
+	\end{center}
+\caption{b}
+\label{fig:Original ckt2}
+\end{figure}
+
 \begin{table}[]
     \centering
-  	\resizebox{\columnwidth}{!}{\input{./tables/EE18BTECH11023/ee18btech11023_table1}}
-    \caption{}
+  	\resizebox{\columnwidth}{!}{\input{tables/EE18BTECH11023/ee18btech11023_table1}}
+    \caption{ parameter's  table for fig.\ref{fig:Original ckt1}a }
     \label{table:ee18btech11023_1}
 \end{table}
-
+\begin{table}[]
+    \centering
+  	\resizebox{\columnwidth}{!}{\input{tables/EE18BTECH11023/ee18btech11023_table2}}
+    \caption{parameter's  table for fig.\ref{fig:Original ckt2}b}
+    \label{table:ee18btech11023_2}
+\end{table}
 \item 
 \label{Question_1a_ee18btech11023}
 \textbf{
@@ -30,9 +67,9 @@ terminal?What is the input resistance?What is the current
 gain Io/Is ?}\\
 \\
 \solution \\
-Refer to the fig. \ref{fig:Original ckt1} for the feedback current amplifier circuit, in this super common gate transistor is connected between the gate and source terminals of the MOSFET.\\
+Refer to the fig. \ref{fig:Original ckt1}a for the feedback current amplifier circuit, in this super common gate transistor is connected between the gate and source terminals of the MOSFET.\\
 Replace the op-amp with its equivalent modal and replace the MOSFET with its small signal equivalent circuit.\\
-with reference to the fig,\ref{fig:small ckt1}. For ideal op-amp,the input resistance($R_{id}$) is very high (infinite) . And the drain current is approximately equal to source current
+with reference to the fig,\ref{fig:smallckt1}. For ideal op-amp,the input resistance($R_{id}$) is very high (infinite) . And the drain current is approximately equal to source current
 \begin{align}
     I_{D} \cong  I_{S}
 \label{eq_ee18btech11023_1}
@@ -43,7 +80,7 @@ The closed loop gain of op-amp is
     \label{eq_ee18btech11023_2}
 \end{align}
 for larger value of closed loop gain , open loop gain '$\mu$' will be large. 
-from fig.\ref{fig:small ckt1} we can observe that input voltage is,
+from fig.\ref{fig:smallckt1} we can observe that input voltage is,
 \begin{align}
     V_{in} = -R_sI_s
     \label{eq_ee18btech11023_3}
@@ -61,7 +98,7 @@ therefore the current gain is,
     \frac{I_o}{I_s} = 1 \; A/A
     \label{eq_ee18btech11023_5}
 \end{align}
-and from fig.\ref{fig:small ckt1} the input Resistance is equal to $R_{id}$
+and from fig.\ref{fig:smallckt1} the input Resistance is equal to $R_{id}$
 \begin{align}
     R_{i} = R_{id}
     \label{eq_ee18btech11023_6}
@@ -76,16 +113,16 @@ expressions for G, $Ri$, and $R_o$.?}
 \\
 \solution\\
 For the finite value of $\mu$ and the input resistance of a ideal op-amp is very high(infinite).
-the open loop amplifier circuit ('G' circuit ) fig.\ref{fig:small ckt1}
-\begin{figure}[!ht]
+the open loop amplifier circuit ('G' circuit ) fig.\ref{fig:smallckt1}
+\begin{figure}[!h]
 	\begin{center}
-			\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11023/ee18btech11023_ckt3}}
+			\resizebox{\columnwidth}{!}{\input{figs/EE18BTECH11023/ee18btech11023_ckt3}}
 	\end{center}
 \caption{}
-\label{fig:small ckt1}
+\label{fig:smallckt1}
 \end{figure}
 
-For a ideal op-amp the output Resistance is very small, so we can neglect the resistance $r_o$.  from fig\ref{fig:small ckt1}
+For a ideal op-amp the output Resistance is very small, so we can neglect the resistance $r_o$.  from fig.\ref{fig:smallckt1}
 \begin{align}
     V_{id} = I_sR_s
     \label{eq_ee18btech11023_7}
@@ -111,7 +148,7 @@ Expression for current gain G is:
     G = \mu g_m R_s
     \label{eq_ee18btech11023_11}
 \end{align}
-from the fig.\ref{fig:small ckt1}
+from the fig.\ref{fig:smallckt1}
 \begin{align*}
     since \;\; R_{id} = \infty
 \end{align*}
@@ -160,7 +197,7 @@ the value of 'H' will be:
 \textbf{
 (d) Find GH and T . If $\mu$ is large, what is the value of T ?}\\
 \solution\\
-from eq.\ref{eq_ee18btech11023_10} and from eq.\ref{eq_ee18btech11023_16}
+from eq.\ref{eq_ee18btech11023_11} and from eq.\ref{eq_ee18btech11023_16}
 \begin{align*}
     G = \mu g_m R_s\;\; ,  \;\;\; H = 1
 \end{align*}
@@ -237,7 +274,7 @@ then $R_{in}$ becomes:
     R_{out} = (1 + GH)R_o
     \label{eq_ee18btech11023_28}
 \end{align}
-From the figure Fig.\ref{fig:small ckt1} 
+From the figure Fig.\ref{fig:smallckt1} 
 \begin{align}
     R_o = \frac{1}{g_m}
     \label{eq_ee18btech11023_29}
@@ -264,36 +301,21 @@ By observing the eq.\ref{eq_ee18btech11023_31} , for the lager value for $\mu$ w
 \label{Question_2f_ee18btech11023}
 \textbf{
 (f) The “super” CG transistor can be utilized in the cascode
-configuration shown in Fig.\ref{fig:Original ckt2}, where $V_G$ is a dc
+configuration shown in Fig.\ref{fig:Original ckt2}b, where $V_G$ is a dc
 bias voltage. Replacing Q1 by its small-signal model, use
-the analogy of the resulting circuit to that in Fig.\ref{fig:Original ckt1}
-to find Io and Rout.}
-\textbf{\begin{figure}[!ht]
+the analogy of the resulting circuit to that in Fig.\ref{fig:Original ckt1}a to find Io and Rout.}
+\begin{figure}[!h]
 	\begin{center}
-			\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11023/ee18btech11023_ckt2}}
-	\end{center}
-\caption{}
-\label{fig:Original ckt2}
-\end{figure}}
-\\parameter table for fig.\ref{fig:Original ckt2}  is
-TABLE.\ref{table:ee18btech11023_2}
-\begin{table}[]
-    \centering
-  	\resizebox{\columnwidth}{!}{\input{./tables/EE18BTECH11023/ee18btech11023_table2}}
-    \caption{}
-    \label{table:ee18btech11023_2}
-\end{table}\\
-\solution\\
-Refer to the fig.\ref{fig:Original ckt2} for the cascode configuration in which the super CG transistor is used.  the small signal equivalent circuit is shown in 
-fig.\ref{fig:small ckt2},
-
-\begin{figure}[!ht]
-	\begin{center}
-			\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11023/ee18btech11023_ckt4}}
+			\resizebox{\columnwidth}{!}{\input{figs/EE18BTECH11023/ee18btech11023_ckt4}}
 	\end{center}
 \caption{}
 \label{fig:small ckt2}
 \end{figure}
+
+\solution\\
+Refer to the fig.\ref{fig:Original ckt2}b for the cascode configuration in which the super CG transistor is used.  the small signal equivalent circuit is shown in 
+fig.\ref{fig:small ckt2},
+
 
 from the fig.\ref{fig:small ckt2} clearly observed that the current $I_s$
 \begin{align}
@@ -415,18 +437,12 @@ since the value of resistance R is 1ohm
     I_o = -V_o
     \label{eq_ee18btech11023_53}
 \end{align}
-\begin{table}[]
-    \centering
-  	\resizebox{\columnwidth}{!}{\input{./tables/EE18BTECH11023/ee18btech11023_table3}}
-    \caption{}
-    \label{table:ee18btech11023_3}
-\end{table}
 following link provides instructions for simulation
  \begin{lstlisting}
 spice/EE18BTECH11023/README
 \end{lstlisting}
-fig.\ref{fig:spice fig} shows the circuit implemented in spice using parameter table\ref{table:ee18btech11023_3}
-\begin{figure}[!ht]
+fig.\ref{fig:spice fig} shows the circuit implemented in spice using parameter Table.\ref{table:ee18btech11023_3}
+\begin{figure}[!h]
 	\begin{center}
 			\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11023/ee18btech11023_ckt5}}
 	\end{center}
@@ -434,7 +450,12 @@ fig.\ref{fig:spice fig} shows the circuit implemented in spice using parameter t
 \label{fig:spice fig}
 \end{figure}
 
-
+\begin{table}[]
+    \centering
+  	\resizebox{\columnwidth}{!}{\input{./tables/EE18BTECH11023/ee18btech11023_table3}}
+    \caption{parameter's table for fig.\ref{fig:spice fig}}
+    \label{table:ee18btech11023_3}
+\end{table}
 
 the following netlits code simulates the feedback current amplifier and generates sinusoidal output 
  \begin{lstlisting}
@@ -450,10 +471,11 @@ final output plot is below.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=\columnwidth]{figs/EE18BTECH11023/ee18btech11023_output.eps}
-    \caption{output from feedback Amplifier}
+    \caption{output of feedback Amplifier}
     \label{fig:output}
 \end{figure}
 here we are using amplitude 1 for input signal. \\
 then the output voltage will negative of the input signal. there will be no change in amplitude in output signal.\\
 
 \end{enumerate}
+
