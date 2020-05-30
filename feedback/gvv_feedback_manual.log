@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2020.3.3)  26 MAY 2020 08:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2020.3.3)  30 MAY 2020 09:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1278,6 +1278,10 @@ LaTeX Info: Redefining \nameref on input line 88.
 \@outlinefile=\write4
 \openout4 = `gvv_feedback_manual.out'.
 
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 \c@lstlisting=\count199
 \c@theorem=\count266
 \c@problem=\count267
@@ -1287,7 +1291,6 @@ LaTeX Info: Redefining \nameref on input line 88.
 \c@rem=\count271
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 224.
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 224.
-
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
@@ -1458,19 +1461,15 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 271.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 271.
 Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
 (rerunfilecheck)             Checksum: 0CA316A16B2B9024EAD9F543B11E2310;272.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 271.
  ) 
 Here is how much of TeX's memory you used:
- 33258 strings out of 492983
- 713713 string characters out of 6134923
- 951856 words of memory out of 5000000
- 36194 multiletter control sequences out of 15000+600000
+ 33260 strings out of 492983
+ 713759 string characters out of 6134923
+ 951841 words of memory out of 5000000
+ 36196 multiletter control sequences out of 15000+600000
  75595 words of font info for 190 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,14n,67p,511b,1114s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_feedback_manual.dvi (5 pages, 158524 bytes).
+Output written on gvv_feedback_manual.dvi (5 pages, 158520 bytes).
